@@ -1,0 +1,20 @@
+th {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  border: 2px solid #000;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+tr:nth-child(odd) {
+  background-color: white;
+}
