@@ -4,20 +4,20 @@ export default function TransactionHistory({ items }) {
   return (
     <table>
       <thead>
-        <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+        <tr className={css.tr}>
+          <th className={css.th}>Type</th>
+          <th className={css.th}>Amount</th>
+          <th className={css.th}>Currency</th>
         </tr>
       </thead>
 
       <tbody>
         {items.map((item) => {
           return (
-            <tr key={item.id}>
-              <td>{item.type}</td>
-              <td>{item.amount}</td>
-              <td>{item.currency}</td>
+            <tr className={css.tr} key={item.id}>
+              <td className={css.td}>{item.type}</td>
+              <td className={css.td}>{item.amount}</td>
+              <td className={css.td}>{item.currency}</td>
             </tr>
           );
         })}
